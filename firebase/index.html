@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper #ffee58 yellow lighten-1">
+            <a href="#" class="brand-logo">Signup Form</a>
+            <ul id="nav-mobile" class="right">
+                <li><a class="modal-trigger" href="#modal2">Login</a></li>
+                <li><a class="modal-trigger" href="#modal1">Signup</a></li>
+                <li><a href="collapsible.html">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- signup Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Sign up</h4>
+
+            <form action="">
+                <input type="email" placeholder="Enter Email" id="signupEmail" />
+                <input type="password" placeholder="Enter Password" id="signupPassword" />
+                <button type="submit" class="btn waves-effect #ffee58 yellow lighten-1">
+            Submit
+          </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal Structure -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Login Form</h4>
+
+            <form action="">
+                <input type="email" placeholder="Enter Email" id="loginEmail" />
+                <input type="password" placeholder="Enter Password" id="loginPassword" />
+                <button type="submit" class="btn waves-effect #ffee58 yellow lighten-1">
+            Submit
+          </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var elems = document.querySelectorAll(".modal");
+            var instances = M.Modal.init(elems);
+        });
+    </script>
+    <!-- // Import the functions you need from the SDKs you need 
+        
+        After import
+
+        // TODO: Add SDKs for Firebase products that you want to use 
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        // Your web app's Firebase configuration 
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional 
+
+ // import { getAuth, createUserWithEmailAndPassword
+        } from "firebase/auth"; 
+
+        before the last two lines
+        // Initialize Firebase 
+        -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-analytics.js"; import { getAuth } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-auth.js";
+        const firebaseConfig = { apiKey: "AIzaSyDWTWe8D7YvYIgQv4CJvlwzbgZGoDaK8Bw", authDomain: "webpractice-7eeef.firebaseapp.com", projectId: "webpractice-7eeef", storageBucket: "webpractice-7eeef.appspot.com", messagingSenderId: "237789403411", appId:
+        "1:237789403411:web:be1fa689b5e73e9a1a22e6", measurementId: "G-XTMH8K6EV1" }; const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>

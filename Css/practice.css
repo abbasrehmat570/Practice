@@ -1,0 +1,180 @@
+/* Sequence does matter in css file because 
+it prefer the bottom declare style over top declare style, which is ending 
+*/
+
+body {
+    background-color: powderblue;
+    margin: 40px;
+    color: black;
+}
+
+button {
+    color: green;
+    background-color: white;
+    padding: 8px;
+    border: greenyellow 8px solid;
+    width: 150px;
+    height: 80px;
+    font-size: 25px;
+}
+
+button:hover {
+    color: white;
+    background-color: green;
+    border: black 5px solid;
+    padding: 8px;
+    font-size: 25px;
+}
+
+button:focus {
+    color: rgb(49, 20, 212);
+    background-color: rgb(189, 56, 96);
+    border: rgb(199, 172, 172) 5px solid;
+    padding: 8px;
+    font-size: 25px;
+}
+
+a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 25px;
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 25px;
+}
+
+a:active {
+    color: tomato;
+}
+
+div h2 {
+    border: 2px dotted red;
+}
+
+div h3 {
+    color: #8909f1;
+    font-size: 200%;
+    text-align: center;
+}
+
+span {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+form {
+    padding: 20px;
+    margin: 30px;
+}
+
+#second {
+    background-color: rgb(43, 65, 62);
+    padding: 10px;
+    border-spacing: 10px;
+    box-shadow: 5px 5px 5px 5px teal;
+    box-sizing: border-box;
+}
+
+#tone {
+    background-color: tomato;
+}
+
+#ttwo {
+    background-color: yellow;
+}
+
+#tthree {
+    background-color: violet;
+}
+
+#tfour {
+    background-color: steelblue;
+}
+
+table {
+    border: 2px solid black;
+    background-color: tomato;
+    /* border-collapse: collapse;*/
+    caption-side: bottom;
+    empty-cells: hide;
+}
+
+th,
+td {
+
+  
+
+
+
+   
+
+
+    border: 2px solid black;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+blockquote {
+    font-size: 200%;
+}
+
+a:before {
+    content: "•";
+    font-size: 25px;
+    vertical-align: middle;
+    font-weight: bold;
+    padding-right: 4px;
+}
+
+ul {
+    background-color: green;
+    list-style: none;
+    /*
+    list-style: square inside url('https://nation.com.pk/print_images/large/2017-04-21/sir-muhammad-iqbal-1492761500-1833.png');
+    /*  type,position,image*/
+}
+
+header ul {
+    background-color: tomato;
+}
+
+
+/* header>ul    will select only the header ul not the other tag ul while ul selects all ul tag and 
+header ul selects only the header ul tag or any tag if is present in it*/
+
+header>ul {
+    background-color: teal;
+}
+
+header ul li {
+    color: green;
+}
+
+header>ul li {
+    color: yellow;
+}
+
+.abc {
+    color: rgb(223, 22, 22);
+}
+
+h1 {
+    color: brown !important;
+}
+
+.Fixed1 {
+    background-color: pink;
+    position: fixed;
+    margin: auto;
+    width: 25%;
+}
+

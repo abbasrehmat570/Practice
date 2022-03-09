@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <h1 id="name">Website Name</h1>
+        <button onclick='document.getElementById("name").innerHTML = "First Website"'>Click me!</button><br>
+        <button type="button" onclick="document.getElementById('name').style.fontSize='55px'">Click Me Font</button><br>
+
+        <img id="bulb" src="/images/boff.png" alt="bulb_Off" srcset=""><br>
+
+        <button onclick="document.getElementById('bulb').src = '/images/bon.png' ">Turn On</button>
+        <button onclick="document.getElementById('bulb').src = '/images/boff.png' ">Turn Off</button>
+
+        <button onclick="document.getElementById('bulb').style.display = 'none' ">Hide</button>
+        <button onclick=first()>Show</button>
+        
+    </header>
+    
+
+
+    <section>
+        <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+
+    <script src="js/indJS.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.header1 {
+    background-color: aqua;
+    height: 10%;
+}
+
+.aside {
+    background-color: greenyellow;
+    height: 75%;
+    margin: 20px;
+}
+
+.footer {
+    background-color: gray;
+}
